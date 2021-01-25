@@ -2,9 +2,9 @@
 Get unencrypted 'Saved Password' from Google Chrome
 
 ## Introduction
-Like other browsers Chrome also has built-in login password manager functionality which keeps track of the login secrets of all visited websites. Whenever user logins to any website, he/she will be prompted to save the credentials for later use and if user chooses so, then the username & passwords will be stored in internal login database. So next time onwards whenever user visits that website, he/she will be automatically logged in using these stored credentials which saves hassle of entering the credentials every time.
+Like other browsers Chrome also has built-in login password manager functionality which keeps track of the login secrets of all visited websites. Whenever user logins to any website, they will be prompted to save the credentials for later use and if user chooses so, then the username & passwords will be stored in internal login database. So next time onwards whenever user visits that website, they will be automatically logged in using these stored credentials which saves hassle of entering the credentials every time.
 
-Chrome stores all the sign-on secrets into the internal database file called 'Web data' in the current user profile folder. Newer version has moved the login passwords related database into new file named 'Login Data'.This database file is in SQLite format and contains number of tables storing different kind of data such as auto complete, search keyword, ie7logins etc in addition to login secrets.
+Chrome stores all the sign-on secrets into the internal database file called 'Web data' in the current user profile folder. Newer version has moved the login passwords related database into new file named 'Login Data'.This database file is in SQLite3 format and contains number of tables storing different kind of data such as auto complete, search keyword, ie7logins etc in addition to login secrets.
 
 The logins table mainly contains the information about sign-on secrets such as website URL, username, password fields etc. All this information is stored in the clear text except passwords which are in encrypted format. 
 
